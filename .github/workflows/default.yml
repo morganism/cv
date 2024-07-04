@@ -1,6 +1,6 @@
 name: ruby_template
 
-run-name: ${{ github.actor }} is learning GitHub Actions
+run-name: Checkout and list
 
 on: [push]
 jobs:
