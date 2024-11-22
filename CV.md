@@ -20,7 +20,7 @@ My roles have included:
 
 ```
 ■ 2024 - present
-
+Zilch Technology- Senior Platform Engineer 
 ■ 2023 - 2024 : DevOps Engineer : Automation of game asset delivery, package
 distribution and build tooling. LiveOps cloud architecture, version management,
 containerised game server design, game management application and real time
