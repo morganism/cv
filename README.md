@@ -1,10 +1,10 @@
 # MORGAN SZIRAKI
 
-### A [link](https://raw.githubusercontent.com/morganism/cv/master/MorganSziraki_CV_20240604_4pg.pdf) to my [CV](https://raw.githubusercontent.com/morganism/cv/master/MorganSziraki_CV_20240604_4pg.pdf) in PDF format
+### A [link to my CV in PDF format](https://raw.githubusercontent.com/morganism/cv/master/MorganSziraki_CV_20240604_4pg.pdf)
 
-### A [link](https://github.com/morganism/cv/blob/master/CV.md) to the markdown version of my [CV](https://github.com/morganism/cv/blob/master/CV.md) 
+### A [link to the Markdown version of my CV](https://github.com/morganism/cv/blob/master/CV.md)
 
-# How does this work ?
+# How does this work?
 
 ## If you push changes to `CV.md`, here’s how the workflow runs step-by-step:
 
@@ -39,20 +39,10 @@
    - The `Upload PDFs as artifacts` step uploads all `.pdf` files (both the original `CV.pdf` and the renamed `MorganSziraki_CV_20241218_4pg.pdf`) as artifacts. These can be downloaded from the workflow summary.
 
 ### Example Output
+
 After pushing changes to `CV.md`:
 - **Artifacts Generated**:
   - `CV.pdf` (the direct conversion of `CV.md`).
   - `MorganSziraki_CV_20241218_4pg.pdf` (the renamed file with today’s date).
 - **Artifacts in Workflow Summary**:
   - You’ll find a downloadable artifact named `converted-pdfs` containing the PDF files.
-
----
-
-Would you like to test this workflow or modify it further to address additional scenarios?
-
-
-----------------------------------------------------------------------------------------------------------------------------------------------
-
-# How does this work ?
-
-
