@@ -3,7 +3,7 @@ name: Convert Markdown to PDF
 on:
   push:
     paths:
-      - "**/*.md" # Trigger only when markdown files are modified or pushed
+      - "**/*.md" # Trigger only when Markdown files are modified or pushed
   workflow_dispatch: # Allow manual triggering of the workflow
 
 jobs:
@@ -11,38 +11,49 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install Pandoc and LaTeX
+      # Install necessary tools
+      - name: Install Pandoc, LaTeX, and Fonts
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-latex-recommended
+          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-latex-recommended fonts-dejavu
 
+      # Find Markdown files
       - name: Find Markdown files
         id: find_markdown
         run: |
           files=$(find . -name "*.md")
-          echo "::set-output name=markdown_files::$files"
-        shell: bash
+          echo "markdown_files=$files" >> $GITHUB_ENV
 
-      - name: Convert Markdown to PDF
-        if: steps.find_markdown.outputs.markdown_files != ''
+      # Clean Markdown files (optional: remove problematic Unicode characters)
+      - name: Preprocess Markdown files
+        if: env.markdown_files
         run: |
-          for file in ${{ steps.find_markdown.outputs.markdown_files }}; do
-          pandoc "$file" -o "${file%.md}.pdf" --pdf-engine=xelatex
-         done
-       shell: bash
+          for file in $markdown_files; do
+            sed -i 's/■/-/g' "$file" # Replace problematic character
+          done
 
+      # Convert Markdown to PDF
+      - name: Convert Markdown to PDF
+        if: env.markdown_files
+        run: |
+          for file in $markdown_files; do
+            pandoc "$file" -o "${file%.md}.pdf" --pdf-engine=xelatex
+          done
 
+      # Rename CV.pdf with the current date
       - name: Rename CV.pdf
-        if: steps.find_markdown.outputs.markdown_files != ''
+        if: env.markdown_files
         run: |
           if [ -f CV.pdf ]; then
             today=$(date +%Y%m%d)
             mv CV.pdf "MorganSziraki_CV_${today}_4pg.pdf"
           fi
 
+      # Upload PDFs as artifacts
       - name: Upload PDFs as artifacts
         uses: actions/upload-artifact@v3
         with:
