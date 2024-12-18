@@ -1,5 +1,4 @@
 name: Convert Markdown to PDF
-
 on:
   push:
     paths:
