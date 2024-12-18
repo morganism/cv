@@ -4,7 +4,7 @@
 
 ### [Link to the Markdown version of my CV](https://github.com/morganism/cv/blob/master/CV.md)
 
-
+```
 # How does this work?
 
 ## If you push changes to `CV.md`, here’s how the workflow runs step-by-step:
@@ -49,3 +49,4 @@ After pushing changes to `CV.md`:
   - `MorganSziraki_CV_20241218_4pg.pdf` (the renamed file with today’s date).
 - **Artifacts in Workflow Summary**:
   - You’ll find a downloadable artifact named `converted-pdfs` containing the PDF files.
+```
