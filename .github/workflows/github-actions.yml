@@ -3,7 +3,7 @@ name: Convert Markdown to PDF
 on:
   push:
     paths:
-      - '**/*.md'  # Trigger on changes to any Markdown file in the repository
+      - '**/CV.md'  # Trigger on changes to any Markdown file in the repository named CV.md
 
 jobs:
   convert-markdown-to-pdf:
