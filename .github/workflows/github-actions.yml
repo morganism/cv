@@ -19,14 +19,6 @@ jobs:
           files=$(find . -name "*.md")
           echo "markdown_files=$files" >> $GITHUB_ENV
 
-      # Step 5: Debug - Print the working directory
-      - name: Debug: Print Working Directory
-        run: pwd
-
-      # Step 6: Debug - List all files recursively
-      - name: Debug: List Files
-        run: ls -R
-
       # Step 7: Convert Markdown to PDF
       - name: Convert Markdown to PDF
         if: ${{ env.markdown_files != '' }}
