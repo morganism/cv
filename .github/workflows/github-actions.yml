@@ -4,6 +4,61 @@ on:
   push:
     paths:
       - '**/*.md'  # Trigger on changes to any Markdown file in the repository named CV.md
+name: Convert CV.md to PDF
+
+on:
+  push:
+    paths:
+      - 'CV.md'  # Trigger only when CV.md is modified
+  workflow_dispatch:  # Allow manual triggering of the workflow
+
+jobs:
+  convert-markdown-to-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Install Pandoc, LaTeX, and Fonts
+      - name: Install Pandoc, LaTeX, and Fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-latex-recommended fonts-dejavu
+
+      # Step 3: Debug - Check for CV.md
+      - name: Debug: Check for CV.md
+        run: |
+          if [ -f "CV.md" ]; then
+            echo "CV.md exists!"
+          else
+            echo "CV.md not found!"
+            exit 1
+          fi
+
+      # Step 4: Convert CV.md to PDF
+      - name: Convert CV.md to PDF
+        run: |
+          pandoc CV.md -o CV.pdf --pdf-engine=xelatex
+
+      # Step 5: Rename PDF
+      - name: Rename CV.pdf
+        run: |
+          if [ -f "CV.pdf" ]; then
+            today=$(date +%Y%m%d)
+            mv CV.pdf "MorganSziraki_CV_${today}_4pg.pdf"
+          else
+            echo "CV.pdf not found!"
+            exit 1
+          fi
+
+      # Step 6: Upload PDF as artifact
+      - name: Upload PDF
+        uses: actions/upload-artifact@v3
+        with:
+          name: CV-PDF
+          path: MorganSziraki_CV_*.pdf
 
 jobs:
   convert-markdown-to-pdf:
