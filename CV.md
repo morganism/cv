@@ -9,8 +9,6 @@ morgan.sziraki@gmail.com
 +44 779 989 5560
 ```
 
-# cv links 2  22222222
-
 [LinkedIn - https://www.linkedin.com/in/morganismdev/](https://www.linkedin.com/in/morganismdev/)
 
 [GitHub - https://git.morganism.dev/](https://git.morganism.dev/)
