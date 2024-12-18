@@ -2,33 +2,46 @@ jobs:
   convert-markdown-to-pdf:
     runs-on: ubuntu-latest
     steps:
+      # Step 1: Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      # Step 2: Install Pandoc, LaTeX, and Fonts
       - name: Install Pandoc, LaTeX, and Fonts
         run: |
           sudo apt-get update
           sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-latex-recommended fonts-dejavu
 
+      # Step 3: Find Markdown files
       - name: Find Markdown files
         id: find_markdown
         run: |
-          files=$(find . -name "*.md" | tr '\n' ' ')
+          files=$(find . -name "*.md")
           echo "markdown_files=$files" >> $GITHUB_ENV
 
+      # Debug: Print the markdown_files variable to confirm it is being set
+      - name: Debug: Print markdown_files
+        run: echo "$markdown_files"
+
+      # Step 4: Print working directory
       - name: Debug: Print Working Directory
         run: pwd
 
+      # Step 5: List all files recursively in the repository
       - name: Debug: List Files
         run: ls -R
 
+      # Step 6: Convert Markdown to PDF
       - name: Convert Markdown to PDF
         if: env.markdown_files != ''
         run: |
+          # Loop through each Markdown file
           for file in $markdown_files; do
+            echo "Processing $file"
             pandoc "$file" -o "$(pwd)/${file%.md}.pdf" --pdf-engine=xelatex
           done
 
+      # Step 7: Rename CV.pdf
       - name: Rename CV.pdf
         if: env.markdown_files != ''
         run: |
@@ -39,9 +52,9 @@ jobs:
             echo "CV.pdf not found!"
           fi
 
+      # Step 8: Upload PDFs as artifacts
       - name: Upload PDFs as artifacts
         uses: actions/upload-artifact@v3
         with:
           name: converted-pdfs
           path: "$(pwd)/*.pdf"
-
