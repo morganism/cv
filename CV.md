@@ -9,7 +9,6 @@ morgan.sziraki@gmail.com
 +44 779 989 5560
 ```
 
-----
 
 [LinkedIn - https://www.linkedin.com/in/morganismdev/](https://www.linkedin.com/in/morganismdev/)
 
