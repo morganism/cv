@@ -1,61 +1,47 @@
-name: Convert Markdown to PDF
-
-on:
-  push:
-    paths:
-      - "**/*.md" # Trigger only when Markdown files are modified or pushed
-  workflow_dispatch: # Allow manual triggering of the workflow
-
 jobs:
   convert-markdown-to-pdf:
     runs-on: ubuntu-latest
-
     steps:
-      # Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Install necessary tools
       - name: Install Pandoc, LaTeX, and Fonts
         run: |
           sudo apt-get update
           sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-latex-recommended fonts-dejavu
 
-      # Find Markdown files
       - name: Find Markdown files
         id: find_markdown
         run: |
           files=$(find . -name "*.md" | tr '\n' ' ')
           echo "markdown_files=$files" >> $GITHUB_ENV
 
-      # Clean Markdown files (optional: remove problematic Unicode characters)
-      - name: Preprocess Markdown files
-        if: env.markdown_files
-        run: |
-          for file in $markdown_files; do
-            sed -i 's/■/-/g' "$file" # Replace problematic character
-          done
+      - name: Debug: Print Working Directory
+        run: pwd
 
-      # Convert Markdown to PDF
+      - name: Debug: List Files
+        run: ls -R
+
       - name: Convert Markdown to PDF
-        if: env.markdown_files
+        if: env.markdown_files != ''
         run: |
           for file in $markdown_files; do
-            pandoc "$file" -o "${file%.md}.pdf" --pdf-engine=xelatex
+            pandoc "$file" -o "$(pwd)/${file%.md}.pdf" --pdf-engine=xelatex
           done
 
-      # Rename CV.pdf with the current date
       - name: Rename CV.pdf
-        if: env.markdown_files
+        if: env.markdown_files != ''
         run: |
-          if [ -f CV.pdf ]; then
+          if [ -f "$(pwd)/CV.pdf" ]; then
             today=$(date +%Y%m%d)
-            mv CV.pdf "MorganSziraki_CV_${today}_4pg.pdf"
+            mv "$(pwd)/CV.pdf" "$(pwd)/MorganSziraki_CV_${today}_4pg.pdf"
+          else
+            echo "CV.pdf not found!"
           fi
 
-      # Upload PDFs as artifacts
       - name: Upload PDFs as artifacts
         uses: actions/upload-artifact@v3
         with:
           name: converted-pdfs
-          path: "**/*.pdf"
+          path: "$(pwd)/*.pdf"
+
