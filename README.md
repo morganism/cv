@@ -4,7 +4,6 @@
 
 ### [Link to the Markdown version of my CV](https://github.com/morganism/cv/blob/master/CV.md)
 
----
 
 # How does this work?
 
