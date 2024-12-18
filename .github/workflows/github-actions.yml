@@ -30,9 +30,10 @@ jobs:
         if: steps.find_markdown.outputs.markdown_files != ''
         run: |
           for file in ${{ steps.find_markdown.outputs.markdown_files }}; do
-            pandoc "$file" -o "${file%.md}.pdf"
-          done
-        shell: bash
+          pandoc "$file" -o "${file%.md}.pdf" --pdf-engine=xelatex
+         done
+       shell: bash
+
 
       - name: Rename CV.pdf
         if: steps.find_markdown.outputs.markdown_files != ''
