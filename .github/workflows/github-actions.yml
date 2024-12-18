@@ -19,19 +19,19 @@ jobs:
           files=$(find . -name "*.md")
           echo "markdown_files=$files" >> $GITHUB_ENV
 
-      # Debug: Print the markdown_files variable to confirm it is being set
+      # Step 4: Debug - Print markdown_files variable
       - name: Debug: Print markdown_files
         run: echo "$markdown_files"
 
-      # Step 4: Print working directory
+      # Step 5: Debug - Print the working directory
       - name: Debug: Print Working Directory
         run: pwd
 
-      # Step 5: List all files recursively in the repository
+      # Step 6: Debug - List all files recursively
       - name: Debug: List Files
         run: ls -R
 
-      # Step 6: Convert Markdown to PDF
+      # Step 7: Convert Markdown to PDF
       - name: Convert Markdown to PDF
         if: env.markdown_files != ''
         run: |
@@ -41,7 +41,7 @@ jobs:
             pandoc "$file" -o "$(pwd)/${file%.md}.pdf" --pdf-engine=xelatex
           done
 
-      # Step 7: Rename CV.pdf
+      # Step 8: Rename CV.pdf to include today's date
       - name: Rename CV.pdf
         if: env.markdown_files != ''
         run: |
@@ -52,7 +52,7 @@ jobs:
             echo "CV.pdf not found!"
           fi
 
-      # Step 8: Upload PDFs as artifacts
+      # Step 9: Upload PDFs as artifacts
       - name: Upload PDFs as artifacts
         uses: actions/upload-artifact@v3
         with:
