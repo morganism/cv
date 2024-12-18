@@ -2,7 +2,11 @@
 
 ### A [link](https://raw.githubusercontent.com/morganism/cv/master/MorganSziraki_CV_20240604_4pg.pdf) to my [CV](https://raw.githubusercontent.com/morganism/cv/master/MorganSziraki_CV_20240604_4pg.pdf) in PDF format
 
-### A [link](https://github.com/morganism/cv/blob/master/CV.md) to the markdown version of my [CV](https://github.com/morganism/cv/blob/master/CV.md) If you push changes to `CV.md`, here’s how the workflow runs step-by-step:
+### A [link](https://github.com/morganism/cv/blob/master/CV.md) to the markdown version of my [CV](https://github.com/morganism/cv/blob/master/CV.md) 
+
+# How does this work ?
+
+## If you push changes to `CV.md`, here’s how the workflow runs step-by-step:
 
 ### Step-by-Step Execution
 
