@@ -14,6 +14,7 @@ morgan.sziraki@gmail.com
 
 I am an experienced SRE, Technical Team Lead, and cloud-based solution developer within the SmartHome IoT technology space, telecoms, and gaming industries.
 
+
 ---
 
 ## PROFESSIONAL EXPERIENCE
