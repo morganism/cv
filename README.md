@@ -1,8 +1,10 @@
 # MORGAN SZIRAKI
 
-### A [link to my CV in PDF format](https://raw.githubusercontent.com/morganism/cv/master/MorganSziraki_CV_20240604_4pg.pdf)
+### [Link to my CV in PDF format](https://raw.githubusercontent.com/morganism/cv/master/MorganSziraki_CV_20240604_4pg.pdf)
 
-### A [link to the Markdown version of my CV](https://github.com/morganism/cv/blob/master/CV.md)
+### [Link to the Markdown version of my CV](https://github.com/morganism/cv/blob/master/CV.md)
+
+---
 
 # How does this work?
 
@@ -37,6 +39,8 @@
 
 7. **Upload Artifacts**:
    - The `Upload PDFs as artifacts` step uploads all `.pdf` files (both the original `CV.pdf` and the renamed `MorganSziraki_CV_20241218_4pg.pdf`) as artifacts. These can be downloaded from the workflow summary.
+
+---
 
 ### Example Output
 
