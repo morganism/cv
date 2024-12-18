@@ -19,11 +19,6 @@ jobs:
           files=$(find . -name "*.md")
           echo "markdown_files=$files" >> $GITHUB_ENV
 
-      # Step 4: Debug - Print markdown_files variable
-      - name: Debug: Print markdown_files
-        run: |
-          echo "markdown_files=${{ env.markdown_files }}"
-
       # Step 5: Debug - Print the working directory
       - name: Debug: Print Working Directory
         run: pwd
