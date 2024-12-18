@@ -1,3 +1,10 @@
+name: Convert Markdown to PDF
+
+on:
+  push:
+    paths:
+      - '**/*.md'  # Trigger on changes to any Markdown file in the repository
+
 jobs:
   convert-markdown-to-pdf:
     runs-on: ubuntu-latest
@@ -19,7 +26,7 @@ jobs:
           files=$(find . -name "*.md")
           echo "markdown_files=$files" >> $GITHUB_ENV
 
-      # Step 7: Convert Markdown to PDF
+      # Step 4: Convert Markdown to PDF
       - name: Convert Markdown to PDF
         if: ${{ env.markdown_files != '' }}
         run: |
@@ -29,7 +36,7 @@ jobs:
             pandoc "$file" -o "$(pwd)/${file%.md}.pdf" --pdf-engine=xelatex
           done
 
-      # Step 8: Rename CV.pdf to include today's date
+      # Step 5: Rename CV.pdf to include today's date
       - name: Rename CV.pdf
         if: ${{ env.markdown_files != '' }}
         run: |
@@ -40,7 +47,7 @@ jobs:
             echo "CV.pdf not found!"
           fi
 
-      # Step 9: Upload PDFs as artifacts
+      # Step 6: Upload PDFs as artifacts
       - name: Upload PDFs as artifacts
         uses: actions/upload-artifact@v3
         with:
