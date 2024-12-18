@@ -21,7 +21,8 @@ jobs:
 
       # Step 4: Debug - Print markdown_files variable
       - name: Debug: Print markdown_files
-        run: echo "$markdown_files"
+        run: |
+          echo "markdown_files=${{ env.markdown_files }}"
 
       # Step 5: Debug - Print the working directory
       - name: Debug: Print Working Directory
@@ -33,17 +34,17 @@ jobs:
 
       # Step 7: Convert Markdown to PDF
       - name: Convert Markdown to PDF
-        if: env.markdown_files != ''
+        if: ${{ env.markdown_files != '' }}
         run: |
           # Loop through each Markdown file
-          for file in $markdown_files; do
+          for file in ${{ env.markdown_files }}; do
             echo "Processing $file"
             pandoc "$file" -o "$(pwd)/${file%.md}.pdf" --pdf-engine=xelatex
           done
 
       # Step 8: Rename CV.pdf to include today's date
       - name: Rename CV.pdf
-        if: env.markdown_files != ''
+        if: ${{ env.markdown_files != '' }}
         run: |
           if [ -f "$(pwd)/CV.pdf" ]; then
             today=$(date +%Y%m%d)
