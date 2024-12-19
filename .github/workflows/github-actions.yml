@@ -22,7 +22,7 @@ jobs:
       - name: Find Markdown files
         id: find_markdown
         run: |
-          files=$(find . -name "*.md")
+          files=$(find . -name "CV.md")
           echo "markdown_files=$files" >> $GITHUB_ENV
 
       # Step 4: Convert Markdown to PDF
