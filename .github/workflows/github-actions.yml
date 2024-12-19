@@ -36,6 +36,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+      - name: Commit and Push CV.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add CV.pdf
-          git commit -m "Update CV.pdf after modification to CV.md"
+          git commit -m "Update CV.pdf after modification to CV.md" || echo "No changes to commit"
           git push "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
