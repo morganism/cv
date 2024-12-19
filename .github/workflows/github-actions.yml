@@ -3,14 +3,7 @@ name: Convert Markdown to PDF
 on:
   push:
     paths:
-      - '**/*.md'  # Trigger on changes to any Markdown file in the repository named CV.md
-
-on:
-  push:
-    paths:
-      - 'CV.md'  # Trigger only when CV.md is modified
-  workflow_dispatch:  # Allow manual triggering of the workflow
-
+      - '**/CV.md'  # Trigger on changes to any Markdown file in the repository named CV.md
 jobs:
   convert-markdown-to-pdf:
     runs-on: ubuntu-latest
