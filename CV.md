@@ -65,7 +65,7 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 
 ## WORK HISTORY
 
-### Zilch Technology, London UK
+### Zilch Technology, London UK (08.2024 - present)
 **Senior Platform Engineer**
 
 - Maintain AWS infrastructure via Terraform
