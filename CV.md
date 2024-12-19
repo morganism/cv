@@ -57,7 +57,7 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 - Ruby, Kotlin, Java, Python, Perl, C, Shell, Expect  
 - SQL, NoSQL, MySQL, Postgres, ElasticSearch, DynamoDB, Redis, AuroraDb
 - Jira, PagerDuty 
-- AWS: Cloudformation, VPC, EC2, Autoscaling Groups, Subnets, API Gateway, CloudWatch  
+- AWS: Cloudformation, VPC, EC2, Autoscaling Groups, Subnets, API Gateway, CloudWatch, Event Bridge 
 - Agile, Scrum, Kanban  
 - Kafka, RabbitMQ, MQTT, Mosquitto
 - Monitoring: Wavefront, CloudWatch, Grafana, Kibana  
