@@ -10,7 +10,7 @@ morgan.sziraki@gmail.com
 [LinkedIn](https://www.linkedin.com/in/morganismdev/)  
 [GitHub](https://git.morganism.dev/)  
 
----   
+---     
 
 I am an experienced SRE, Technical Team Lead, and cloud-based solution developer within the SmartHome IoT technology space, telecoms, and gaming industries.
 
