@@ -1,54 +1,39 @@
-name: Convert Markdown to PDF
+name: Convert Markdown to PDF and Commit
 
 on:
   push:
     paths:
-      - '**/CV.md'  # Trigger on changes to any Markdown file in the repository named CV.md
+      - 'CV.md'  # Trigger only when CV.md is modified
+  workflow_dispatch:  # Allow manual triggering of the workflow
+
 jobs:
-  convert-markdown-to-pdf:
+  convert-and-commit:
     runs-on: ubuntu-latest
+
     steps:
       # Step 1: Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Install Pandoc, LaTeX, and Fonts
-      - name: Install Pandoc, LaTeX, and Fonts
+      # Step 2: Install dependencies
+      - name: Install Required Tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-latex-recommended fonts-dejavu
+          sudo apt-get install -y pandoc texlive-xetex
 
-      # Step 3: Find Markdown files
-      - name: Find Markdown files
-        id: find_markdown
+      # Step 3: Run the Ruby script to convert Markdown to PDF
+      - name: Run md2pdf.rb
+        run: ./bin/md2pdf.rb CV.md CV.pdf
+
+      # Step 4: Configure Git for committing
+      - name: Set up Git
         run: |
-          files=$(find . -name "CV.md")
-          echo "markdown_files=$files" >> $GITHUB_ENV
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      # Step 4: Convert Markdown to PDF
-      - name: Convert Markdown to PDF
-        if: ${{ env.markdown_files != '' }}
+      # Step 5: Commit and push the resulting PDF
+      - name: Commit and Push CV.pdf
         run: |
-          # Loop through each Markdown file
-          for file in ${{ env.markdown_files }}; do
-            echo "Processing $file"
-            pandoc "$file" -o "$(pwd)/${file%.md}.pdf" --pdf-engine=xelatex
-          done
-
-      # Step 5: Rename CV.pdf to include today's date
-      - name: Rename CV.pdf
-        if: ${{ env.markdown_files != '' }}
-        run: |
-          if [ -f "$(pwd)/CV.pdf" ]; then
-            today=$(date +%Y%m%d)
-            mv "$(pwd)/CV.pdf" "$(pwd)/MorganSziraki_CV_${today}_4pg.pdf"
-          else
-            echo "CV.pdf not found!"
-          fi
-
-      # Step 6: Upload PDFs as artifacts
-      - name: Upload PDFs as artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: converted-pdfs
-          path: "$(pwd)/*.pdf"
+          git add CV.pdf
+          git commit -m "Update CV.pdf after modification to CV.md"
+          git push
