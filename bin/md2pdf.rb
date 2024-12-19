@@ -2,7 +2,7 @@
 
 require 'fileutils'
 
-# Function to convert Markdown to PDF
+# Function to convert Markdown to PDF 
 def convert_markdown_to_pdf(input_file, output_file = nil)
   unless File.exist?(input_file)
     puts "Error: The file '#{input_file}' does not exist."
