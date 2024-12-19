@@ -9,7 +9,7 @@
 
 - [md2pdf](https://github.com/morganism/cv/blob/master/bin/md2pdf.rb)
 
-This a ruby application that ```pandoc``` and ```latex``` to create a PDF file from a MarkDown file.
+This a ruby application that requires ```pandoc``` and ```latex``` to create a PDF file from a MarkDown file.
 
 - [github-actions.yml](https://github.com/morganism/cv/blob/master/.github/workflows/github-actions.yml)
 
