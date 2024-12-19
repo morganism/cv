@@ -65,6 +65,13 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 
 ## WORK HISTORY
 
+### Zilch Technology, London UK
+**Senior Platform Engineer**
+
+- Maintain AWS infrastructure via Terraform
+- managed services via Kubernetes
+- last line of support to ensure critical financial services are always up and running
+
 ### Supermassive Games, Guildford, UK (03.2023 – 04.2024)  
 **DevOps, LiveOps**
 
