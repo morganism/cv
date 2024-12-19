@@ -51,15 +51,15 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 ## TECHNICAL SKILLS
 
 - DevOps / SRE Technical Team Lead  
-- Kubernetes, GitOps, K3s, Docker, Docker-Compose, Portainer  
+- Kubernetes, GitOps, K3s, Docker, Docker-Compose, Docker-Swarm, Vagrant
+- Portainer, K9s
 - Linux, *nix Administration, networking since 1996, Kali and security tools  
 - Ruby, Kotlin, Java, Python, Perl, C, Shell, Expect  
-- SQL, NoSQL, MySQL, Postgres, ElasticSearch, DynamoDB, Redis  
+- SQL, NoSQL, MySQL, Postgres, ElasticSearch, DynamoDB, Redis, AuroraDb
 - Jira, PagerDuty 
-- Docker, Docker Compose, Docker Swarm, Vagrant  
-- AWS: VPC, EC2, Autoscaling Groups, Subnets, API Gateway, CloudWatch  
+- AWS: Cloudformation, VPC, EC2, Autoscaling Groups, Subnets, API Gateway, CloudWatch  
 - Agile, Scrum, Kanban  
-- Kafka, RabbitMQ, MQTT  
+- Kafka, RabbitMQ, MQTT, Mosquitto
 - Monitoring: Wavefront, CloudWatch, Grafana, Kibana  
 
 ---
