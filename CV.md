@@ -55,7 +55,8 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 - Linux, *nix Administration, networking since 1996, Kali and security tools  
 - Ruby, Kotlin, Java, Python, Perl, C, Shell, Expect  
 - SQL, NoSQL, MySQL, Postgres, ElasticSearch, DynamoDB, Redis  
-- Jira, PagerDuty, Docker, Vagrant  
+- Jira, PagerDuty 
+- Docker, Docker Compose, Docker Swarm, Vagrant  
 - AWS: VPC, EC2, Autoscaling Groups, Subnets, API Gateway, CloudWatch  
 - Agile, Scrum, Kanban  
 - Kafka, RabbitMQ, MQTT  
