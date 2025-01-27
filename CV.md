@@ -53,13 +53,14 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 - DevOps / SRE Technical Team Lead  
 - Kubernetes, GitOps, K3s, Docker, Docker-Compose, Docker-Swarm, Vagrant
 - Portainer, K9s
-- Linux, *nix Administration, networking since 1996, Kali and security tools  
+- Linux, unix Administration, networking since 1996, Kali and security tools  
 - Ruby, Rails, Sinatra, Kotlin, Java, Python, Perl, C, Shell, Expect  
 - SQL, NoSQL, MySQL, Postgres, ElasticSearch, DynamoDB, Redis, AuroraDb
 - Jira, PagerDuty 
 - AWS: Cloudformation, VPC, EC2, Autoscaling Groups, Subnets, API Gateway, CloudWatch, Event Bridge 
 - Agile, Scrum, Kanban  
 - Kafka, RabbitMQ, MQTT, Mosquitto
+- IaC: Puppet, Chef, Ansible, Terraform
 - Monitoring: Wavefront, CloudWatch, Grafana, Kibana  
 
 ---
@@ -69,9 +70,11 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 ### Zilch Technology, London UK (08.2024 - present)
 **Senior Platform Engineer**
 
-- Maintain AWS infrastructure via Terraform
+- Maintain AWS infrastructure
 - managed services via Kubernetes
 - last line of support to ensure critical financial services are always up and running
+- Terraform development to manage AWS Infrastracture
+- linux development and administration
 
 ### Supermassive Games, Guildford, UK (03.2023 – 04.2024)  
 **DevOps, LiveOps**
@@ -80,6 +83,7 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 - Designed and implemented CDN mirroring on Fastly’s Edge to enhance performance and reduce costs.  
 - Created infrastructure for containerized game servers using K8s and Thundernetes.  
 - Automated asset mirroring, package distribution, and other processes.
+- Linux administration
 
 ---
 
@@ -90,6 +94,10 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 - Implemented Kafka messaging architecture.  
 - Built cost-monitoring tools and enhanced platform security.  
 - Created Docker images for integration testing.
+- Ansible and Puppet based IaC 
+- Created build pipelines using github actions, Teamcity, AWS tooling
+- Linux administration and kernel mods to support Java devs
+- Observability using Kibana with Elasitic Search, some Lua development
 
 ---
 
@@ -101,12 +109,24 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 - Automated infrastructure provisioning with AWS and custom Ruby/Python scripts.  
 - Designed modular OO Perl frameworks for billing assurance.  
 - Delivered mediation system migrations and training across various clients.
+- Managed linux systems for optimised performance
+
 
 #### Client Engagements:
 
 - **The Cloud**: Developed internal, virtualized infrastructure using Chef and Ruby.  
+
 - **SKY (UK/Ireland)**: Automated call generation using BluGem and Perl.  
+
 - **Virgin Media, ntl, Telewest**: Developed telephony switch data extraction software using Perl::Expect.  
+
+- **Base Telecom (Brussels) : reverse engineered CRM using plsql
+
+- **Vodafone Ireland : in situ replacement of Mediation systems
+
+- **IBM Hursley Park : SME for mediation system switch for O2
+
+- Linux administration and product deployment using Chef, Puppet and Ansible
 
 ---
 
