@@ -84,6 +84,8 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 - Created infrastructure for containerized game servers using K8s and Thundernetes.  
 - Automated asset mirroring, package distribution, and other processes.
 - Linux administration
+- EC2 linux instance configuration via GitOps
+- Kubernetes configuration management vi GitOps and Flux
 
 ---
 
