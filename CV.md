@@ -75,6 +75,7 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 - last line of support to ensure critical financial services are always up and running
 - Terraform development to manage AWS Infrastracture
 - linux development and administration
+- support for maintaining External promotion asset distribution
 
 ### Supermassive Games, Guildford, UK (03.2023 – 04.2024)  
 **DevOps, LiveOps**
@@ -86,6 +87,7 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 - Linux administration
 - EC2 linux instance configuration via GitOps
 - Kubernetes configuration management vi GitOps and Flux
+- Created Unreal MacOS buid tooling
 
 ---
 
