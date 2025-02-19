@@ -1,3 +1,11 @@
+[Test Status]
+
+
+[Test Status]
+[Compile Status]
+[PR Count]
+[Last Commit]
+
 # MORGAN SZIRAKI
 
 ## Link to my most current and up to date version of my CV in 
