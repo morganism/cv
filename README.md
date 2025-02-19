@@ -1,8 +1,8 @@
 
-[Test Status]
-[Compile Status]
-[PR Count]
-[Last Commit]
+![Test Status]
+![Compile Status]
+![PR Count]
+![Last Commit]
 
 # MORGAN SZIRAKI
 
