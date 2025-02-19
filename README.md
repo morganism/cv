@@ -1,9 +1,7 @@
-yyy
 
 ![Test Status](https://img.shields.io/badge/tests-failing-brightgreen)
 ![Compile Status](https://img.shields.io/badge/compile-failing-brightgreen)
 ![PR Count](https://img.shields.io/badge/PRs-0-blue)
-![Last Commit](https://img.shields.io/badge/last_commit-2025-02-19-yellow)
 
 # MORGAN SZIRAKI
 
