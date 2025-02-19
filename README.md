@@ -16,4 +16,4 @@ This a ruby application that requires ```pandoc``` and ```latex``` to create a P
 This is a Github Action that implements an ```on push``` trigger when a new version of [CV.md](https://github.com/morganism/cv/blob/master/CV.md) gets pushed to the repo. This action sets up all dependencies using apt and pulls down [md2pdf](https://github.com/morganism/cv/blob/master/bin/md2pdf.rb) and executes:
 
 [md2pdf](https://github.com/morganism/cv/blob/master/bin/md2pdf.rb) [CV.md](https://github.com/morganism/cv/blob/master/CV.md) [CV.pdf](https://github.com/morganism/cv/blob/master/CV.md)
-
+ 
