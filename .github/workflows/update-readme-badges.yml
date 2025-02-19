@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 * * * *'  # Runs daily at midnight UTC
+    - cron: '* * * * *'  # Runs daily at midnight UTC
 
 jobs:
   update-readme:
