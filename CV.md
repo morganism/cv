@@ -25,7 +25,7 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 - **2024 - Present**: Zilch Technology – Senior Platform Engineer  
   Responsible for ensuring AWS services are optimized and running.  
 
-- **2023 - 2024**: DevOps Engineer  
+- **2023 - 2024**: DevOps Engineer Supermassive Games
   Focused on automation of game asset delivery, package distribution, and build tooling.  
 
 - **2019 - 2022**: Tech Lead for SRE/DevOps, IoT Cloud Engineering Team  
