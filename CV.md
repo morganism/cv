@@ -61,7 +61,7 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 - Agile, Scrum, Kanban  
 - Kafka, RabbitMQ, MQTT, Mosquitto
 - IaC: Puppet, Chef, Ansible, Terraform
-- Monitoring: Wavefront, CloudWatch, Grafana, Kibana  
+- Monitoring: Wavefront, CloudWatch, Grafana, Kibana, DataDog 
 
 ---
 
