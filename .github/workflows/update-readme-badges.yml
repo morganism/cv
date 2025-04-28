@@ -21,6 +21,8 @@ jobs:
       run: |
         # Assume you have a script to run tests, replace with your own
         ./run-tests.sh
+        echo "::set-output name=tests::Exit Code = $?"
+      
       continue-on-error: true
       id: tests
 
@@ -28,6 +30,7 @@ jobs:
       run: |
         # Assume you have a script to compile code, replace with your own
         ./compile.sh
+        echo "::set-output name=compile::Exit Code = $?"
       continue-on-error: true
       id: compile
 
@@ -53,8 +56,10 @@ jobs:
         fi
 
         COMPILE_STATUS="passing"
+        COMPILE_COLOR="brightgreen"
         if [ "${{ steps.compile.outcome }}" != "success" ]; then
           COMPILE_STATUS="failing"
+          COMPILE_COLOR="red"
         fi
 
         PR_COUNT=${{ steps.pr_count.outputs.pr_count }}
@@ -66,7 +71,7 @@ jobs:
         sed -i "s/xxx/yyy/" README.md
 
         sed -i "s|!\[Test Status\].*|![Test Status](https://img.shields.io/badge/tests-${TEST_STATUS}-${TEST_COLOR})|" README.md
-        sed -i "s|!\[Compile Status\].*|![Compile Status](https://img.shields.io/badge/compile-${COMPILE_STATUS}-brightgreen)|" README.md
+        sed -i "s|!\[Compile Status\].*|![Compile Status](https://img.shields.io/badge/compile-${COMPILE_STATUS}-${COMPILE_COLOR})|" README.md
         sed -i "s|!\[PR Count\].*|![PR Count](https://img.shields.io/badge/PRs-${PR_COUNT}-blue)|" README.md
         sed -i "s|!\[Last Commit\].*|![Last Commit](https://img.shields.io/badge/last_commit-${LAST_COMMIT_DATE}-yellow)|" README.md
 
