@@ -22,7 +22,7 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 
 ### Key Roles
 
-- **2024 - Present**: Zilch Technology – Senior Platform Engineer  
+- **2024 - 2025**: Zilch Technology – Senior Platform Engineer  
   Responsible for ensuring AWS services are optimized and running.  
 
 - **2023 - 2024**: DevOps Engineer Supermassive Games
@@ -67,7 +67,7 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 
 ## WORK HISTORY
 
-### Zilch Technology, London UK (08.2024 - present)
+### Zilch Technology, London UK (08.2024 - 03.2025)
 **Senior Platform Engineer**
 
 - Maintain AWS infrastructure
@@ -101,7 +101,7 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 - Ansible and Puppet based IaC 
 - Created build pipelines using github actions, Teamcity, AWS tooling
 - Linux administration and kernel mods to support Java devs
-- Observability using Kibana with Elasitic Search, some Lua development
+- Observability using Wavefront, Cloudwatch, Kibana with Elasitic Search (+ Lua development)
 
 ---
 
