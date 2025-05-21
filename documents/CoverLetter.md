@@ -2,7 +2,8 @@
 27 Ashbourne Grove  
 East Dulwich, London, UK SE22 8RN  
 [morgan.sziraki@gmail.com](mailto:morgan.sziraki@gmail.com)  
-[GitHub](https://git.morganism.dev/) • [LinkedIn](https://www.linkedin.com/in/morganismdev/)  
+[GitHub](https://git.morganism.dev/) https://git.morganism.dev/ • [LinkedIn](https://www.linkedin.com/in/morganismdev/) https://www.linkedin.com/in/morganismdev/  
+
 +44 779 989 5560  
 
 ---
