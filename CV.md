@@ -22,6 +22,9 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 
 ### Key Roles
 
+- **2025 - 2026**: Scalpel Ltd – Senior DevOps Engineer  
+  Providing tooling, AWS expertise and Cloud domain expertise designing hybrid ML model training. 
+
 - **2024 - 2025**: Zilch Technology – Senior Platform Engineer  
   Responsible for ensuring AWS services are optimized and running.  
 
@@ -66,6 +69,16 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 ---
 
 ## WORK HISTORY
+
+
+### Scalpel Limited, London UK (06.2025 - present)
+**Senior DevOps Engineer**
+
+- Design and automate AWS infrastructure provisioning
+- development of bespoke linux distro
+- designing and integrating Terraform IaC Management + GitOps
+- providing cloud domain expertise to improve ML model training 
+- linux administration
 
 ### Zilch Technology, London UK (08.2024 - 03.2025)
 **Senior Platform Engineer**
