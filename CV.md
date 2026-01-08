@@ -7,12 +7,12 @@ London, UK SE22 8RN
 morgan.sziraki@gmail.com  
 +44 779 989 5560  
 
-[LinkedIn](https://www.linkedin.com/in/morganismdev/)
-[GitHub](https://git.morganism.dev/)
+[LinkedIn - https://www.linkedin.com/in/morganismdev/](https://www.linkedin.com/in/morganismdev/)
+[GitHub - https://git.morganism.dev/](https://git.morganism.dev/)
 
 ---       
 
-I am an experienced SRE, Technical Team Lead, and cloud-based solution developer within the SmartHome IoT technology space, telecoms, and gaming industries.
+I am an experienced SRE, Technical Team Lead, and cloud-based solution developer within the SmartHome IoT technology space, telecoms, finance, gaming and medical industries.  My recent engagement with [Scalpel AI - https://scalpel.ai](https://scalpel.ai) has provided a need to research, explore and experiment with technologies in the AI, ML, and LLM space that are immediately applicable to the Scalpel tech stack; understanding the abilities and limitations of "AI" has proved very valuable.
 
 
 
@@ -58,7 +58,7 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 - Portainer, K9s
 - Linux, unix Administration, networking since 1996, Kali and security tools  
 - Ruby, Rails, Sinatra, Kotlin, Java, Python, Perl, C, Shell, Expect  
-- SQL, NoSQL, MySQL, Postgres, ElasticSearch, DynamoDB, Redis, AuroraDb
+- SQL, NoSQL, MySQL, Postgres, ElasticSearch, DynamoDB, Redis, AuroraDb, Neo4J (Graph DB)
 - Jira, PagerDuty 
 - AWS: Cloudformation, VPC, EC2, Autoscaling Groups, Subnets, API Gateway, CloudWatch, Event Bridge 
 - Agile, Scrum, Kanban  
@@ -74,6 +74,8 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 ### Scalpel Limited, London UK (06.2025 - present)
 **Senior DevOps Engineer**
 
+- Research and evalute recent AI techmologies to improve model training and performance
+- Creation and provision of specialised LLM development environments 
 - Design and automate AWS infrastructure provisioning
 - development of bespoke linux distro
 - designing and integrating Terraform IaC Management + GitOps
