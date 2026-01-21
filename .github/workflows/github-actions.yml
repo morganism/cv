@@ -43,7 +43,7 @@ jobs:
           git push "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
 
       # Step 6: Switch to the Pages branch update README.md
-      - name: Update GitHub Pages main page : README.md
+      - name: Update GitHub Pages main page README.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
