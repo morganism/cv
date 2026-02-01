@@ -5,10 +5,12 @@
 
 # MORGAN SZIRAKI
 
-## Link to my most current and up to date version of my CV in 
-- [PDF format](https://raw.githubusercontent.com/morganism/cv/master/CV.pdf)
+## Link to my most current and up to date version of my CV 
+- 🌎 [HTML format](https://cv.morganism.dev/)
 
-- [MarkDown format](https://github.com/morganism/cv/blob/master/CV.md)
+- 📖 [PDF format](https://raw.githubusercontent.com/morganism/cv/master/CV.pdf)
+
+- 📑 [MarkDown format](https://github.com/morganism/cv/blob/master/CV.md)
 
 ### How does this work ?
 
