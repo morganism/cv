@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+: <<DOCXX
+Add description
+Author: morgan@morganism.dev
+Date: Wed  7 Jan 2026 17:18:15 GMT
+DOCXX
+
+i=0
+while (( $i <= $# )); 
+do
+  echo ${!i}
+  (( i++ ))
+done
