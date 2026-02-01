@@ -14,14 +14,17 @@ jobs:
 
     - name: Install dependencies
       run: |
+        echo "::group::Install Dependencies"
         sudo apt-get update
         sudo apt-get install -y jq
+        echo "::endgroup::"
 
     - name: Run tests
       run: |
         # Assume you have a script to run tests, replace with your own
         ./run-tests.sh
         echo "::set-output name=tests::Exit Code = $?"
+        echo "{name}={value}" >> "$GITHUB_OUTPUT"
       
       continue-on-error: true
       id: tests
@@ -67,8 +70,10 @@ jobs:
 
         # Update the README.md file with new badge information
 
-
-        sed -i "s/xxx/yyy/" README.md
+        echo "::group::Install Dependencies"
+        echo "PR Count: ${PR_COUNT}"
+        echo "Last Commit Date: ${LAST_COMMIT_DATE}"
+        echo "::endgroup::"
 
         sed -i "s|!\[Test Status\].*|![Test Status](https://img.shields.io/badge/tests-${TEST_STATUS}-${TEST_COLOR})|" README.md
         sed -i "s|!\[Compile Status\].*|![Compile Status](https://img.shields.io/badge/compile-${COMPILE_STATUS}-${COMPILE_COLOR})|" README.md
