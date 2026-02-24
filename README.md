@@ -1,6 +1,4 @@
-
-![Test Status](https://img.shields.io/badge/tests-failing-red)
-![Compile Status](https://img.shields.io/badge/compile-failing-brightgreen)
+[![Ruby](https://github.com/morganism/cv/actions/workflows/ruby.yml/badge.svg)](https://github.com/morganism/cv/actions/workflows/ruby.yml)
 ![PR Count](https://img.shields.io/badge/PRs-0-blue)
 [![ruby_template](https://github.com/morganism/cv/actions/workflows/default.yml/badge.svg)](https://github.com/morganism/cv/actions/workflows/default.yml)
 
