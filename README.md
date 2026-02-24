@@ -2,6 +2,7 @@
 ![Test Status](https://img.shields.io/badge/tests-failing-red)
 ![Compile Status](https://img.shields.io/badge/compile-failing-brightgreen)
 ![PR Count](https://img.shields.io/badge/PRs-0-blue)
+[![ruby_template](https://github.com/morganism/cv/actions/workflows/default.yml/badge.svg)](https://github.com/morganism/cv/actions/workflows/default.yml)
 
 # MORGAN SZIRAKI
 
