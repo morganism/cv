@@ -12,7 +12,7 @@ morgan.sziraki@gmail.com
 
 ---       
 
-I am an experienced SRE, Technical Team Lead, and cloud-based solution developer within the SmartHome IoT technology space, telecoms, finance, gaming and medical industries.  My recent engagement with [Scalpel AI - https://scalpel.ai](https://scalpel.ai) has provided a need to research, explore and experiment with technologies in the AI, ML, and LLM space that are immediately applicable to the Scalpel tech stack; understanding the abilities and limitations of "AI" has proved very valuable.
+I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solution developer within the SmartHome IoT technology space, telecoms, finance, gaming and medical industries.  My recent engagement with [Scalpel AI - https://scalpel.ai](https://scalpel.ai) has provided a need to research, explore and experiment with technologies in the AI, ML, and LLM space that are immediately applicable to the Scalpel tech stack; understanding the abilities and limitations of "AI" has proved very valuable.
 
 
 
