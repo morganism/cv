@@ -1,14 +1,15 @@
-
-![Test Status](https://img.shields.io/badge/tests-failing-red)
-![Compile Status](https://img.shields.io/badge/compile-failing-brightgreen)
+[![Ruby](https://github.com/morganism/cv/actions/workflows/ruby.yml/badge.svg)](https://github.com/morganism/cv/actions/workflows/ruby.yml)
 ![PR Count](https://img.shields.io/badge/PRs-0-blue)
+[![ruby_template](https://github.com/morganism/cv/actions/workflows/default.yml/badge.svg)](https://github.com/morganism/cv/actions/workflows/default.yml)
 
 # MORGAN SZIRAKI
 
-## Link to my most current and up to date version of my CV in 
-- [PDF format](https://raw.githubusercontent.com/morganism/cv/master/CV.pdf)
+## Link to my most current and up to date version of my CV 
+- 🌎 [HTML format](https://cv.morganism.dev/)
 
-- [MarkDown format](https://github.com/morganism/cv/blob/master/CV.md)
+- 📖 [PDF format](https://raw.githubusercontent.com/morganism/cv/master/CV.pdf)
+
+- 📑 [MarkDown format](https://github.com/morganism/cv/blob/master/CV.md)
 
 ### How does this work ?
 
