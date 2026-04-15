@@ -45,3 +45,11 @@ jobs:
           git add CV.pdf
           git commit -m "Update CV.pdf after modification to CV.md" || echo "No changes to commit"
           git push "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+
+      # Step 6: Make a Release so CV.pdf is downloadable
+      - name: Upload CV to release
+        run: |
+          gh release create latest --title "Latest CV" --notes "Auto-generated" || true
+          gh release upload latest CV.pdf --clobber
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
