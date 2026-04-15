@@ -5,11 +5,13 @@
 # MORGAN SZIRAKI
 
 ## Link to my most current and up to date version of my CV 
-- 🌎 [HTML format](https://cv.morganism.dev/)
+- [🌎 HTML format](https://cv.morganism.dev/)
 
-- 📖 [PDF format](https://raw.githubusercontent.com/morganism/cv/master/CV.pdf)
+- [📖 PDF format](https://raw.githubusercontent.com/morganism/cv/master/CV.pdf)
 
-- 📑 [MarkDown format](https://github.com/morganism/cv/blob/master/CV.md)
+- [⬇ Download CV](https://github.com/morganism/cv/releases/download/latest/CV.pdf)
+
+- [📑 MarkDown format](https://github.com/morganism/cv/blob/master/CV.md)
 
 ### How does this work ?
 
@@ -23,3 +25,4 @@ This is a Github Action that implements an ```on push``` trigger when a new vers
 
 [md2pdf](https://github.com/morganism/cv/blob/master/bin/md2pdf.rb) [CV.md](https://github.com/morganism/cv/blob/master/CV.md) [CV.pdf](https://github.com/morganism/cv/blob/master/CV.pdf)
  
+[⬇ Download CV](https://github.com/morganism/cv/releases/download/latest/CV.pdf)
