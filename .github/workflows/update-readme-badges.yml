@@ -14,8 +14,10 @@ jobs:
 
     - name: Install dependencies
       run: |
+        echo "::group::Install Dependencies"
         sudo apt-get update
         sudo apt-get install -y jq
+        echo "::endgroup::"
 
     - name: Run tests
       run: |
@@ -38,6 +40,7 @@ jobs:
       run: |
         PR_COUNT=$(curl -s https://api.github.com/repos/${{ github.repository }}/pulls | jq length)
         echo "::set-output name=pr_count::$PR_COUNT"
+        echo "{pr_count}={$PR_COUNT}" >> "$GITHUB_OUTPUT"
       id: pr_count
 
     - name: Get last commit date
@@ -67,8 +70,10 @@ jobs:
 
         # Update the README.md file with new badge information
 
-
-        sed -i "s/xxx/yyy/" README.md
+        echo "::group::Install Dependencies"
+        echo "PR Count: ${PR_COUNT}"
+        echo "Last Commit Date: ${LAST_COMMIT_DATE}"
+        echo "::endgroup::"
 
         sed -i "s|!\[Test Status\].*|![Test Status](https://img.shields.io/badge/tests-${TEST_STATUS}-${TEST_COLOR})|" README.md
         sed -i "s|!\[Compile Status\].*|![Compile Status](https://img.shields.io/badge/compile-${COMPILE_STATUS}-${COMPILE_COLOR})|" README.md

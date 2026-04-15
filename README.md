@@ -1,14 +1,17 @@
-
-![Test Status](https://img.shields.io/badge/tests-failing-red)
-![Compile Status](https://img.shields.io/badge/compile-failing-brightgreen)
+[![Ruby](https://github.com/morganism/cv/actions/workflows/ruby.yml/badge.svg)](https://github.com/morganism/cv/actions/workflows/ruby.yml)
 ![PR Count](https://img.shields.io/badge/PRs-0-blue)
+[![ruby_template](https://github.com/morganism/cv/actions/workflows/default.yml/badge.svg)](https://github.com/morganism/cv/actions/workflows/default.yml)
 
 # MORGAN SZIRAKI
 
-## Link to my most current and up to date version of my CV in 
-- [PDF format](https://raw.githubusercontent.com/morganism/cv/master/CV.pdf)
+## Link to my most current and up to date version of my CV 
+- [🌎 HTML format](https://cv.morganism.dev/)
 
-- [MarkDown format](https://github.com/morganism/cv/blob/master/CV.md)
+- [📖 PDF format](https://raw.githubusercontent.com/morganism/cv/master/CV.pdf)
+
+- [⬇ Download CV](https://github.com/morganism/cv/releases/download/latest/CV.pdf)
+
+- [📑 MarkDown format](https://github.com/morganism/cv/blob/master/CV.md)
 
 ### How does this work ?
 
@@ -20,5 +23,6 @@ This a ruby application that requires ```pandoc``` and ```latex``` to create a P
 
 This is a Github Action that implements an ```on push``` trigger when a new version of [CV.md](https://github.com/morganism/cv/blob/master/CV.md) gets pushed to the repo. This action sets up all dependencies using apt and pulls down [md2pdf](https://github.com/morganism/cv/blob/master/bin/md2pdf.rb) and executes:
 
-[md2pdf](https://github.com/morganism/cv/blob/master/bin/md2pdf.rb) [CV.md](https://github.com/morganism/cv/blob/master/CV.md) [CV.pdf](https://github.com/morganism/cv/blob/master/CV.md)
+[md2pdf](https://github.com/morganism/cv/blob/master/bin/md2pdf.rb) [CV.md](https://github.com/morganism/cv/blob/master/CV.md) [CV.pdf](https://github.com/morganism/cv/blob/master/CV.pdf)
  
+[⬇ Download CV](https://github.com/morganism/cv/releases/download/latest/CV.pdf)
