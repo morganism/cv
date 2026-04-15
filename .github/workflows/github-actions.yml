@@ -6,6 +6,9 @@ on:
       - 'CV.md'  # Trigger only when CV.md is modified
   workflow_dispatch:  # Allow manual triggering of the workflow
 
+permissions:
+  contents: write
+
 jobs:
   convert-and-commit:
     runs-on: ubuntu-latest
