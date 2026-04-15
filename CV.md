@@ -5,18 +5,14 @@ East Dulwich
 London, UK SE22 8RN  
 
 morgan.sziraki@gmail.com  
-
-+44 7347 453 728
-
 +44 779 989 5560  
-
 
 [LinkedIn - https://www.linkedin.com/in/morganismdev/](https://www.linkedin.com/in/morganismdev/)
 [GitHub - https://git.morganism.dev/](https://git.morganism.dev/)
 
 ---       
 
-I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solution developer within the SmartHome IoT technology space, telecoms, finance, gaming and medical industries.  My recent engagement with [Scalpel AI - https://scalpel.ai](https://scalpel.ai) has provided a need to research, explore and experiment with technologies in the AI, ML, and LLM space that are immediately applicable to the Scalpel tech stack; understanding the abilities and limitations of "AI" has proved very valuable.
+I am an experienced SRE, Technical Team Lead, and cloud-based solution developer within the SmartHome IoT technology space, telecoms, finance, gaming and medical industries.  My recent engagement with [Scalpel AI - https://scalpel.ai](https://scalpel.ai) has provided a need to research, explore and experiment with technologies in the AI, ML, and LLM space that are immediately applicable to the Scalpel tech stack; understanding the abilities and limitations of "AI" has proved very valuable.
 
 
 
@@ -173,10 +169,3 @@ I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solutio
 ## REFERENCES
 
 Available upon request.
-
-#### OTHER VERSIONS & SOURCE CODE
-
-- [⬇  Download the PDF Version of my CV](https://github.com/morganism/cv/releases/download/latest/CV.pdf)
-
-- [🔆 SourceCode](https://github.com/morganism/cv/)
-
