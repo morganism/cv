@@ -173,3 +173,10 @@ I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solutio
 ## REFERENCES
 
 Available upon request.
+
+#### OTHER VERSIONS & SOURCE CODE
+
+- [⬇  Download the PDF Version of my CV](https://github.com/morganism/cv/releases/download/latest/CV.pdf)
+
+- [🔆 SourceCode](https://github.com/morganism/cv/)
+
