@@ -58,13 +58,13 @@ I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solutio
 ## TECHNICAL SKILLS
 
 - DevOps / SRE Technical Team Lead  
+- AWS, GCP
 - Kubernetes, GitOps, K3s, Docker, Docker-Compose, Docker-Swarm, Vagrant
 - Portainer, K9s
-- Linux, unix Administration, networking since 1996, Kali and security tools  
+- Linux / Unix Administration, customisation and deployment   
 - Ruby, Rails, Sinatra, Kotlin, Java, Python, Perl, C, Shell, Expect  
 - SQL, NoSQL, MySQL, Postgres, ElasticSearch, DynamoDB, Redis, AuroraDb, Neo4J (Graph DB)
 - Jira, PagerDuty 
-- AWS: Cloudformation, VPC, EC2, Autoscaling Groups, Subnets, API Gateway, CloudWatch, Event Bridge 
 - Agile, Scrum, Kanban  
 - Kafka, RabbitMQ, MQTT, Mosquitto
 - IaC: Puppet, Chef, Ansible, Terraform
@@ -75,7 +75,7 @@ I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solutio
 ## WORK HISTORY
 
 
-### Scalpel Limited, London UK (06.2025 - present)
+### Scalpel Limited, London UK (06/2025 - 01/2026)
 **Senior DevOps Engineer**
 
 - Research and evalute recent AI techmologies to improve model training and performance
@@ -86,7 +86,7 @@ I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solutio
 - providing cloud domain expertise to improve ML model training 
 - linux administration
 
-### Zilch Technology, London UK (08.2024 - 03.2025)
+### Zilch Technology, London UK (08/2024 - 03/2025)
 **Senior Platform Engineer**
 
 - Maintain AWS infrastructure
@@ -96,7 +96,7 @@ I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solutio
 - linux development and administration
 - support for maintaining External promotion asset distribution
 
-### Supermassive Games, Guildford, UK (03.2023 – 04.2024)  
+### Supermassive Games, Guildford, UK (03/2023 – 04/2024)  
 **DevOps, LiveOps**
 
 - Transitioned traditional AAA game development to cloud-based LiveOps.  
@@ -110,7 +110,7 @@ I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solutio
 
 ---
 
-### Centrica Hive, London, UK (07.2015 – 05.2022)  
+### Centrica Hive, London, UK (07/2015 – 05/2022)  
 **SRE Technical Lead, DevOps**
 
 - Developed Ruby-based deployment and orchestration systems for AWS.  
@@ -124,7 +124,7 @@ I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solutio
 
 ---
 
-### Cartesian, London, UK (05.2000 – 06.2015)  
+### Cartesian, London, UK (05/2000 – 06/2015)  
 **Senior Consultant**
 
 #### Highlights:
