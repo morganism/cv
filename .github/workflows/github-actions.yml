@@ -61,11 +61,18 @@ jobs:
       - name: Push changes to GitHub Pages
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
+        uses: actions/checkout@v6
+        with:
+          ref: Pages
+          path: docs
+          sparse-checkout: |
+            docs/README.md
+      - run: |
+          tree
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout Pages
           cp CV.md docs/README.md
-          git add docs/README.md
-          git commit -m "Update CV GH Pages" || echo "No changes to commit."
-          git push
+          #git add docs/README.md
+          #git commit -m "Update CV GH Pages" || echo "No changes to commit."
+          #git push
