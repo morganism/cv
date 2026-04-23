@@ -5,14 +5,20 @@ East Dulwich
 London, UK SE22 8RN  
 
 morgan.sziraki@gmail.com  
+
++44 7347 453 728
+
 +44 779 989 5560  
+
 
 [LinkedIn - https://www.linkedin.com/in/morganismdev/](https://www.linkedin.com/in/morganismdev/)
 [GitHub - https://git.morganism.dev/](https://git.morganism.dev/)
 
 ---       
 
-I am an experienced SRE, Technical Team Lead, and cloud-based solution developer within the SmartHome IoT technology space, telecoms, finance, gaming and medical industries.  My recent engagement with [Scalpel AI - https://scalpel.ai](https://scalpel.ai) has provided a need to research, explore and experiment with technologies in the AI, ML, and LLM space that are immediately applicable to the Scalpel tech stack; understanding the abilities and limitations of "AI" has proved very valuable.
+I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solution developer within the SmartHome IoT technology space, telecoms, finance, gaming and medical industries.  My recent engagement with [Scalpel AI - https://scalpel.ai](https://scalpel.ai) has provided a need to research, explore and experiment with technologies in the AI, ML, and LLM space that are immediately applicable to the Scalpel tech stack; understanding the abilities and limitations of "AI" has proved very valuable.
+
+
 
 ---
 
@@ -20,19 +26,19 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 
 ### Key Roles
 
-- **2025 - 2026**: Senior DevOps Engineer  
+- **2025 - 2026**: Scalpel Ltd – Senior DevOps Engineer  
   Providing tooling, AWS expertise and Cloud domain expertise designing hybrid ML model training. 
 
-- **2024 - 2025**: Senior Platform Engineer  
+- **2024 - 2025**: Zilch Technology – Senior Platform Engineer  
   Responsible for ensuring AWS services are optimized and running.  
 
-- **2023 - 2024**: Senior DevOps Engineer
+- **2023 - 2024**: DevOps Engineer Supermassive Games
   Focused on automation of game asset delivery, package distribution, and build tooling.  
 
-- **2019 - 2022**: SRE Tech Lead, IoT Cloud Engineering Team  
+- **2019 - 2022**: Tech Lead for SRE/DevOps, IoT Cloud Engineering Team  
   Provided technical direction and SME support for Hive platforms deployed in production and staging.  
 
-- **2018 - 2019**: SRE / DevOps Engineer  
+- **2018 - 2019**: SRE and DevOps Engineer  
   Developed systems to monitor platform performance, ensure uptime, automate rollouts, and monitor costs.  
 
 - **2017 - 2018**: Platform Software Developer  
@@ -139,13 +145,11 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 
 - **Base Telecom (Brussels) : reverse engineered CRM using plsql
 
-- **Vodafone (Ireland) : in situ replacement of Mediation systems
+- **Vodafone Ireland : in situ replacement of Mediation systems
 
-- **IBM (Hursley Park) : SME for mediation system switch for O2
+- **IBM Hursley Park : SME for mediation system switch for O2
 
-- NTL, Telewest, Cable & Wireless, Three, O2, EE, TDC (Denmark)
-
-* Linux administration, product deployment, mediation and provisioning SME
+- Linux administration and product deployment using Chef, Puppet and Ansible
 
 ---
 
@@ -169,3 +173,9 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 ## REFERENCES
 
 Available upon request.
+
+#### OTHER VERSIONS & SOURCE CODE
+
+- [⬇  Download the PDF Version of my CV](https://github.com/morganism/cv/releases/download/latest/CV.pdf)
+
+- [🔆 SourceCode](https://github.com/morganism/cv/)
