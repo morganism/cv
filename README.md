@@ -1,5 +1,5 @@
 [![Ruby](https://github.com/morganism/cv/actions/workflows/ruby.yml/badge.svg)](https://github.com/morganism/cv/actions/workflows/ruby.yml)
-![PR Count](https://img.shields.io/badge/PRs-0-blue)
+![PR Count](https://img.shields.io/badge/PRs-3-blue)
 [![ruby_template](https://github.com/morganism/cv/actions/workflows/default.yml/badge.svg)](https://github.com/morganism/cv/actions/workflows/default.yml)
 
 # MORGAN SZIRAKI
