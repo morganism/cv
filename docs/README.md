@@ -179,3 +179,4 @@ Available upon request.
 - [⬇  Download the PDF Version of my CV](https://github.com/morganism/cv/releases/download/latest/CV.pdf)
 
 - [🔆 SourceCode](https://github.com/morganism/cv/)
+
