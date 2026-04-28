@@ -14,7 +14,7 @@ morgan.sziraki@gmail.com
 
 ---       
 
-I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solution developer within the SmartHome IoT technology space, telecoms, finance, gaming and medical industries.  My recent engagement with [Scalpel AI - https://scalpel.ai](https://scalpel.ai) has provided a need to research, explore and experiment with technologies in the AI, ML, and LLM space that are immediately applicable to the Scalpel tech stack; understanding the abilities and limitations of "AI" has proved very valuable.
+I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solution developer within the SmartHome IoT technology space, telecoms, finance, gaming and medical industries. I have recent experience in CV and ML model training and tuning using LoRA to freee base weights and a graphdb to improve inference performance.
 
 
 
@@ -31,7 +31,7 @@ I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solutio
   Responsible for ensuring AWS services are optimized and running.  
 
 - **2023 - 2024**: DevOps Engineer Supermassive Games
-  Focused on automation of game asset delivery, package distribution, and build tooling.  
+  Focused on automation of game asset delivery, package distribution, and build tooling across AWS, GCP and Azure.
 
 - **2019 - 2022**: Tech Lead for SRE/DevOps, IoT Cloud Engineering Team  
   Provided technical direction and SME support for Hive platforms deployed in production and staging.  
@@ -46,7 +46,7 @@ I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solutio
   Developed components for a Ruby-based configuration and orchestration system.  
 
 - **2000 - 2015**: Senior Consultant  
-  Specialized in telephony switch provisioning, mediation systems, and interconnect billing.  
+  Specialized in telephony switch provisioning, mediation and billing & database administration.  
 
 - **1995 - 2000**: Web Developer  
   Focused on integrating legacy systems with websites to create dynamic, online applications.  
@@ -103,7 +103,7 @@ I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solutio
 - Automated asset mirroring, package distribution, and other processes.
 - Linux administration
 - EC2 linux instance configuration via GitOps
-- Kubernetes configuration management vi GitOps and Flux
+- Kubernetes configuration management vi GitOps and Flux to support AWS, GCP and Azure hosting.
 - Created Unreal MacOS buid tooling
 
 ---
@@ -112,6 +112,7 @@ I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solutio
 **SRE Technical Lead, DevOps**
 
 - Developed Ruby-based deployment and orchestration systems for AWS.  
+- Developed multi-cloud service provisioning for AWS + GCP.
 - Implemented Kafka messaging architecture.  
 - Built cost-monitoring tools and enhanced platform security.  
 - Created Docker images for integration testing.
@@ -130,6 +131,7 @@ I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solutio
 - Automated infrastructure provisioning with AWS and custom Ruby/Python scripts.  
 - Designed modular OO Perl frameworks for billing assurance.  
 - Delivered mediation system migrations and training across various clients.
+- Oracle database administration and migration
 - Managed linux systems for optimised performance
 
 
@@ -137,15 +139,15 @@ I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solutio
 
 - **The Cloud**: Developed internal, virtualized infrastructure using Chef and Ruby.  
 
-- **SKY (UK/Ireland)**: Automated call generation using BluGem and Perl.  
+- **SKY (UK/Ireland)**: Automated call generation using BluGem and Perl. Oracle DBA. 
 
 - **Virgin Media, ntl, Telewest**: Developed telephony switch data extraction software using Perl::Expect.  
 
-- **Base Telecom (Brussels) : reverse engineered CRM using plsql
+- **Base Telecom**  (Brussels) : Oracle database migration and reverse engineering of CRM .
 
-- **Vodafone Ireland : in situ replacement of Mediation systems
+- **Vodafone Ireland**  : in situ replacement of Mediation systems
 
-- **IBM Hursley Park : SME for mediation system switch for O2
+- **IBM Hursley Park**  : SME for mediation system switch for O2
 
 - Linux administration and product deployment using Chef, Puppet and Ansible
 
@@ -177,3 +179,4 @@ Available upon request.
 - [⬇  Download the PDF Version of my CV](https://github.com/morganism/cv/releases/download/latest/CV.pdf)
 
 - [🔆 SourceCode](https://github.com/morganism/cv/)
+
