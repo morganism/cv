@@ -14,7 +14,7 @@ morgan.sziraki@gmail.com
 
 ---       
 
-I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solution developer within the SmartHome IoT technology space, telecoms, finance, gaming and medical industries. I have recent experience in CV and ML model training and tuning using LoRA to freee base weights and a graphdb to improve inference performance.
+I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solution developer within the SmartHome IoT technology space, telecoms, finance, gaming and medical industries. I have recent experience in CV and ML model training and tuning using LoRA to freeze base weights and a graphdb to improve inference performance.
 
 
 
