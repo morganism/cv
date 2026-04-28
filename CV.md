@@ -6,8 +6,6 @@ London, UK SE22 8RN
 
 morgan.sziraki@gmail.com  
 
-+44 7347 453 728
-
 +44 779 989 5560  
 
 
@@ -63,7 +61,7 @@ I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solutio
 - Portainer, K9s
 - Linux / Unix Administration, customisation and deployment   
 - Ruby, Rails, Sinatra, Kotlin, Java, Python, Perl, C, Shell, Expect  
-- SQL, NoSQL, MySQL, Postgres, ElasticSearch, DynamoDB, Redis, AuroraDb, Neo4J (Graph DB)
+- SQL, NoSQK, Oracle, MySQL, Postgres, ElasticSearch, DynamoDB, Redis, AuroraDb, Neo4J (Graph DB)
 - Jira, PagerDuty 
 - Agile, Scrum, Kanban  
 - Kafka, RabbitMQ, MQTT, Mosquitto
