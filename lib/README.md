@@ -1,0 +1,1 @@
+curl -Ls https://git.morganism.dev/cv/master/lib/cv_database.sql
