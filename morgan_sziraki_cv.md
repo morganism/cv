@@ -8,9 +8,9 @@ description: CV of Morgan Sziraki – 35+ years IT, Principal DevOps/Platform En
 
 **Principal DevOps & Platform Engineer · SRE Technical Lead**
 
-Sutton, Surrey, UK  
+London, UK  
 [morgan.sziraki@gmail.com](mailto:morgan.sziraki@gmail.com) · +44 779 989 5560  
-[linkedin.com/in/morganismdev](https://www.linkedin.com/in/morganismdev/) · [git.morganism.dev](https://git.morganism.dev/)
+[linkedin.com/in/morganismdev](https://www.linkedin.com/in/morganismdev/) · [git.morganism.dev](https://git.morganism.dev/) · [https://raw.githubusercontent.com/morganism/cv/master/CV.pdf](📎 PDF Version)
 
 ---
 
@@ -48,7 +48,7 @@ Practitioner of GitOps, IaC-first engineering, and Unix-philosophy tooling. Rece
 - Researched and evaluated AI/ML technologies to accelerate model training and inference performance
 - Designed hybrid ML model training environments on AWS, including a bespoke Linux distribution
 - Built and integrated Terraform IaC management + GitOps pipeline from the ground up
-- Automated AWS infrastructure provisioning; provided cloud domain expertise organisation-wide
+- Automated AWS _ GCP infrastructure provisioning; provided multi-cloud domain expertise organisation-wide
 
 ---
 
