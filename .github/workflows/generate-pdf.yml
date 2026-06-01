@@ -1,0 +1,54 @@
+name: Generate CV PDF
+
+on:
+  push:
+    branches:
+      - Pages
+    paths:
+      - 'docs/morgan_sziraki_cv.html'
+  workflow_dispatch:
+
+jobs:
+  generate-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Pages branch (HTML source)
+        uses: actions/checkout@v4
+        with:
+          ref: Pages
+          path: pages-src
+
+      - name: Install WeasyPrint
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq python3-pip libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz0b libfontconfig1
+          pip install weasyprint --quiet
+
+      - name: Convert HTML to PDF
+        run: |
+          python3 - << 'EOF'
+          import weasyprint
+          weasyprint.HTML(filename='pages-src/docs/morgan_sziraki_cv.html').write_pdf('CV.pdf')
+          print('PDF generated successfully')
+          EOF
+
+      - name: Checkout master branch (PDF destination)
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          path: master-dest
+          token: ${{ secrets.CV_PAT }}
+
+      - name: Commit and push PDF to master
+        run: |
+          cp CV.pdf master-dest/CV.pdf
+          cd master-dest
+          git config user.email "morgan.sziraki@gmail.com"
+          git config user.name "Morgan Sziraki"
+          git add CV.pdf
+          if git diff --cached --quiet; then
+            echo "No changes to CV.pdf"
+          else
+            git commit -m "Update CV.pdf generated from HTML [skip ci]"
+            git push
+          fi

@@ -5,14 +5,18 @@ East Dulwich
 London, UK SE22 8RN  
 
 morgan.sziraki@gmail.com  
+
 +44 779 989 5560  
+
 
 [LinkedIn - https://www.linkedin.com/in/morganismdev/](https://www.linkedin.com/in/morganismdev/)
 [GitHub - https://git.morganism.dev/](https://git.morganism.dev/)
 
 ---       
 
-I am an experienced SRE, Technical Team Lead, and cloud-based solution developer within the SmartHome IoT technology space, telecoms, finance, gaming and medical industries.  My recent engagement with [Scalpel AI - https://scalpel.ai](https://scalpel.ai) has provided a need to research, explore and experiment with technologies in the AI, ML, and LLM space that are immediately applicable to the Scalpel tech stack; understanding the abilities and limitations of "AI" has proved very valuable.
+I am a Rubyist, an experienced SRE, Technical Team Lead, and cloud-based solution developer within the SmartHome IoT technology space, telecoms, finance, gaming and medical industries. I have recent experience in CV and ML model training and tuning using LoRA to freeze base weights and a graphdb to improve inference performance.
+
+
 
 ---
 
@@ -20,19 +24,19 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 
 ### Key Roles
 
-- **2025 - 2026**: Senior DevOps Engineer  
+- **2025 - 2026**: Scalpel Ltd – Senior DevOps Engineer  
   Providing tooling, AWS expertise and Cloud domain expertise designing hybrid ML model training. 
 
-- **2024 - 2025**: Senior Platform Engineer  
+- **2024 - 2025**: Zilch Technology – Senior Platform Engineer  
   Responsible for ensuring AWS services are optimized and running.  
 
-- **2023 - 2024**: Senior DevOps Engineer
-  Focused on automation of game asset delivery, package distribution, and build tooling.  
+- **2023 - 2024**: DevOps Engineer Supermassive Games
+  Focused on automation of game asset delivery, package distribution, and build tooling across AWS, GCP and Azure.
 
-- **2019 - 2022**: SRE Tech Lead, IoT Cloud Engineering Team  
+- **2019 - 2022**: Tech Lead for SRE/DevOps, IoT Cloud Engineering Team  
   Provided technical direction and SME support for Hive platforms deployed in production and staging.  
 
-- **2018 - 2019**: SRE / DevOps Engineer  
+- **2018 - 2019**: SRE and DevOps Engineer  
   Developed systems to monitor platform performance, ensure uptime, automate rollouts, and monitor costs.  
 
 - **2017 - 2018**: Platform Software Developer  
@@ -42,7 +46,7 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
   Developed components for a Ruby-based configuration and orchestration system.  
 
 - **2000 - 2015**: Senior Consultant  
-  Specialized in telephony switch provisioning, mediation systems, and interconnect billing.  
+  Specialized in telephony switch provisioning, mediation and billing & database administration.  
 
 - **1995 - 2000**: Web Developer  
   Focused on integrating legacy systems with websites to create dynamic, online applications.  
@@ -52,13 +56,13 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 ## TECHNICAL SKILLS
 
 - DevOps / SRE Technical Team Lead  
+- AWS, GCP
 - Kubernetes, GitOps, K3s, Docker, Docker-Compose, Docker-Swarm, Vagrant
 - Portainer, K9s
-- Linux, unix Administration, networking since 1996, Kali and security tools  
+- Linux / Unix Administration, customisation and deployment   
 - Ruby, Rails, Sinatra, Kotlin, Java, Python, Perl, C, Shell, Expect  
-- SQL, NoSQL, MySQL, Postgres, ElasticSearch, DynamoDB, Redis, AuroraDb, Neo4J (Graph DB)
+- SQL, NoSQK, Oracle, MySQL, Postgres, ElasticSearch, DynamoDB, Redis, AuroraDb, Neo4J (Graph DB)
 - Jira, PagerDuty 
-- AWS: Cloudformation, VPC, EC2, Autoscaling Groups, Subnets, API Gateway, CloudWatch, Event Bridge 
 - Agile, Scrum, Kanban  
 - Kafka, RabbitMQ, MQTT, Mosquitto
 - IaC: Puppet, Chef, Ansible, Terraform
@@ -69,7 +73,7 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 ## WORK HISTORY
 
 
-### Scalpel Limited, London UK (06.2025 - present)
+### Scalpel Limited, London UK (06/2025 - 01/2026)
 **Senior DevOps Engineer**
 
 - Research and evalute recent AI techmologies to improve model training and performance
@@ -80,7 +84,7 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 - providing cloud domain expertise to improve ML model training 
 - linux administration
 
-### Zilch Technology, London UK (08.2024 - 03.2025)
+### Zilch Technology, London UK (08/2024 - 03/2025)
 **Senior Platform Engineer**
 
 - Maintain AWS infrastructure
@@ -90,7 +94,7 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 - linux development and administration
 - support for maintaining External promotion asset distribution
 
-### Supermassive Games, Guildford, UK (03.2023 – 04.2024)  
+### Supermassive Games, Guildford, UK (03/2023 – 04/2024)  
 **DevOps, LiveOps**
 
 - Transitioned traditional AAA game development to cloud-based LiveOps.  
@@ -99,15 +103,16 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 - Automated asset mirroring, package distribution, and other processes.
 - Linux administration
 - EC2 linux instance configuration via GitOps
-- Kubernetes configuration management vi GitOps and Flux
+- Kubernetes configuration management vi GitOps and Flux to support AWS, GCP and Azure hosting.
 - Created Unreal MacOS buid tooling
 
 ---
 
-### Centrica Hive, London, UK (07.2015 – 05.2022)  
+### Centrica Hive, London, UK (07/2015 – 05/2022)  
 **SRE Technical Lead, DevOps**
 
 - Developed Ruby-based deployment and orchestration systems for AWS.  
+- Developed multi-cloud service provisioning for AWS + GCP.
 - Implemented Kafka messaging architecture.  
 - Built cost-monitoring tools and enhanced platform security.  
 - Created Docker images for integration testing.
@@ -118,7 +123,7 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 
 ---
 
-### Cartesian, London, UK (05.2000 – 06.2015)  
+### Cartesian, London, UK (05/2000 – 06/2015)  
 **Senior Consultant**
 
 #### Highlights:
@@ -126,6 +131,7 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 - Automated infrastructure provisioning with AWS and custom Ruby/Python scripts.  
 - Designed modular OO Perl frameworks for billing assurance.  
 - Delivered mediation system migrations and training across various clients.
+- Oracle database administration and migration
 - Managed linux systems for optimised performance
 
 
@@ -133,19 +139,17 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 
 - **The Cloud**: Developed internal, virtualized infrastructure using Chef and Ruby.  
 
-- **SKY (UK/Ireland)**: Automated call generation using BluGem and Perl.  
+- **SKY (UK/Ireland)**: Automated call generation using BluGem and Perl. Oracle DBA. 
 
 - **Virgin Media, ntl, Telewest**: Developed telephony switch data extraction software using Perl::Expect.  
 
-- **Base Telecom (Brussels) : reverse engineered CRM using plsql
+- **Base Telecom**  (Brussels) : Oracle database migration and reverse engineering of CRM .
 
-- **Vodafone (Ireland) : in situ replacement of Mediation systems
+- **Vodafone Ireland**  : in situ replacement of Mediation systems
 
-- **IBM (Hursley Park) : SME for mediation system switch for O2
+- **IBM Hursley Park**  : SME for mediation system switch for O2
 
-- NTL, Telewest, Cable & Wireless, Three, O2, EE, TDC (Denmark)
-
-* Linux administration, product deployment, mediation and provisioning SME
+- Linux administration and product deployment using Chef, Puppet and Ansible
 
 ---
 
@@ -169,3 +173,10 @@ I am an experienced SRE, Technical Team Lead, and cloud-based solution developer
 ## REFERENCES
 
 Available upon request.
+
+#### OTHER VERSIONS & SOURCE CODE
+
+- [⬇  Download the PDF Version of my CV](https://github.com/morganism/cv/releases/download/latest/CV.pdf)
+
+- [🔆 SourceCode](https://github.com/morganism/cv/)
+
