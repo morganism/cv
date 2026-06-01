@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Morgan Sziraki – Principal DevOps & Platform Engineer</title>
+<meta name="description" content="CV of Morgan Sziraki – 35+ years IT, Principal DevOps/Platform Engineer, SRE Technical Lead">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:       #0D1117;
+    --surface:  #161B22;
+    --surface2: #1C2333;
+    --border:   #21262D;
+    --accent:   #00D9F5;
+    --accent2:  #0080BF;
+    --accent3:  #58A6FF;
+    --green:    #3FB950;
+    --text:     #E6EDF3;
+    --muted:    #8B949E;
+    --mono:     'Space Mono', monospace;
+    --sans:     'DM Sans', system-ui, sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.65;
+    min-height: 100vh;
+  }
+
+  /* ── Scan-line texture overlay ─────────────────── */
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,.04) 2px,
+      rgba(0,0,0,.04) 4px
+    );
+    pointer-events: none;
+    z-index: 100;
+  }
+
+  /* ── Left accent bar ───────────────────────────── */
+  body::after {
+    content: '';
+    position: fixed;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, var(--accent), var(--accent2));
+    z-index: 99;
+  }
+
+  /* ── Layout ────────────────────────────────────── */
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 36px 80px;
+  }
+
+  /* ── Header ────────────────────────────────────── */
+  header {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    padding: 36px 40px 32px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2), var(--accent3));
+  }
+
+  /* Terminal dots */
+  header::after {
+    content: '● ● ●';
+    position: absolute;
+    top: 12px; left: 16px;
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: #3D444D;
+  }
+
+  .header-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    align-items: start;
+    margin-top: 8px;
+  }
+
+  h1 {
+    font-family: var(--mono);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+    margin-bottom: 6px;
+  }
+
+  h1 span { color: var(--accent); }
+
+  .tagline {
+    font-family: var(--mono);
+    font-size: 0.82rem;
+    color: var(--accent);
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+  }
+
+  .contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+
+  .contact-grid a {
+    color: var(--accent3);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .contact-grid a:hover { color: var(--accent); border-color: var(--accent); }
+
+  .contact-grid .icon { margin-right: 4px; opacity: .7; }
+
+  .badge-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-end;
+    flex-shrink: 0;
+  }
+
+  .badge {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid;
+    white-space: nowrap;
+  }
+
+  .badge-primary { border-color: var(--accent); color: var(--accent); }
+  .badge-green   { border-color: var(--green);  color: var(--green);  }
+  .badge-blue    { border-color: var(--accent3); color: var(--accent3); }
+
+  /* ── Section ───────────────────────────────────── */
+  section { margin-bottom: 36px; }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .section-label {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--accent2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .section-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--border) 60%, transparent);
+  }
+
+  /* ── Profile ───────────────────────────────────── */
+  .profile-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    padding: 18px 22px;
+    font-size: 0.92rem;
+    color: #B0C4D8;
+    line-height: 1.75;
+  }
+
+  .profile-box strong { color: var(--accent); font-weight: 600; }
+
+  /* ── Skills grid ───────────────────────────────── */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 8px;
+  }
+
+  .skill-row {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .skill-cat {
+    background: var(--surface2);
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--accent2);
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid var(--border);
+  }
+
+  .skill-val {
+    font-size: 0.78rem;
+    color: #B0C4D8;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    line-height: 1.4;
+  }
+
+  /* ── Job cards ─────────────────────────────────── */
+  .job {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 22px 24px;
+    margin-bottom: 12px;
+    position: relative;
+    transition: border-color 0.2s;
+  }
+
+  .job:hover { border-color: var(--accent2); }
+
+  .job-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    align-items: baseline;
+    margin-bottom: 4px;
+  }
+
+  .job-title {
+    font-family: var(--mono);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .job-period {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--accent);
+    background: rgba(0,217,245,.08);
+    border: 1px solid rgba(0,217,245,.2);
+    border-radius: 4px;
+    padding: 2px 8px;
+    white-space: nowrap;
+  }
+
+  .job-company {
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-bottom: 14px;
+  }
+
+  .job-company strong { color: var(--accent3); font-weight: 500; }
+
+  .job ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .job li {
+    font-size: 0.85rem;
+    color: #B0C4D8;
+    padding-left: 16px;
+    position: relative;
+    line-height: 1.55;
+  }
+
+  .job li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--accent2);
+    font-size: 0.75rem;
+    top: 2px;
+  }
+
+  /* ── Client table ──────────────────────────────── */
+  .clients {
+    margin-top: 14px;
+    border-top: 1px solid var(--border);
+    padding-top: 12px;
+  }
+
+  .clients-label {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+  }
+
+  .client-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 8px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(33,38,45,.5);
+    font-size: 0.8rem;
+  }
+
+  .client-name { color: var(--accent3); font-weight: 500; }
+  .client-desc { color: var(--muted); }
+
+  /* ── Education ─────────────────────────────────── */
+  .edu-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 24px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .edu-inst {
+    font-family: var(--mono);
+    font-size: 0.95rem;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .edu-degree { font-size: 0.85rem; color: #B0C4D8; }
+  .edu-year {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--accent);
+  }
+
+  /* ── Interests ─────────────────────────────────── */
+  .interests {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .interest-tag {
+    font-size: 0.8rem;
+    color: #B0C4D8;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 5px 14px;
+    transition: border-color 0.2s, color 0.2s;
+  }
+
+  .interest-tag:hover { border-color: var(--accent2); color: var(--accent); }
+
+  /* ── Footer ────────────────────────────────────── */
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    color: var(--muted);
+    font-family: var(--mono);
+  }
+
+  /* ── Animations ────────────────────────────────── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  header { animation: fadeUp .5s ease both; }
+  section { animation: fadeUp .5s ease both; }
+  section:nth-child(2) { animation-delay: .08s; }
+  section:nth-child(3) { animation-delay: .14s; }
+  section:nth-child(4) { animation-delay: .20s; }
+  section:nth-child(5) { animation-delay: .26s; }
+  section:nth-child(6) { animation-delay: .32s; }
+  section:nth-child(7) { animation-delay: .38s; }
+
+  /* ── Print ─────────────────────────────────────── */
+  @media print {
+    body::before, body::after { display: none; }
+    .job { break-inside: avoid; }
+    .job:hover { border-color: var(--border); }
+  }
+
+  /* ── Responsive ────────────────────────────────── */
+  @media (max-width: 640px) {
+    .page { padding: 24px 20px 60px; }
+    h1 { font-size: 1.6rem; }
+    .header-grid { grid-template-columns: 1fr; }
+    .badge-group { flex-direction: row; align-items: flex-start; }
+    .skills-grid { grid-template-columns: 1fr; }
+    .skill-row { grid-template-columns: 140px 1fr; }
+    .job-header { grid-template-columns: 1fr; }
+    .client-row { grid-template-columns: 1fr; gap: 2px; }
+    .edu-box { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ── HEADER ── -->
+  <header>
+    <div class="header-grid">
+      <div>
+        <h1>Morgan <span>Sziraki</span></h1>
+        <p class="tagline">$ Principal DevOps &amp; Platform Engineer · SRE Technical Lead_</p>
+        <div class="contact-grid">
+          <span><span class="icon">📍</span>Sutton, Surrey, UK</span>
+          <a href="mailto:morgan.sziraki@gmail.com"><span class="icon">✉</span>morgan.sziraki@gmail.com</a>
+          <a href="tel:+447799895560"><span class="icon">☎</span>+44 779 989 5560</a>
+          <a href="https://www.linkedin.com/in/morganismdev/" target="_blank"><span class="icon">in</span>morganismdev</a>
+          <a href="https://git.morganism.dev/" target="_blank"><span class="icon">⌥</span>git.morganism.dev</a>
+        </div>
+      </div>
+      <div class="badge-group">
+        <span class="badge badge-primary">35+ yrs IT</span>
+        <span class="badge badge-green">Open Source</span>
+        <span class="badge badge-blue">Ruby · DevOps · AWS</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── PROFILE ── -->
+  <section>
+    <div class="section-header">
+      <span class="section-label">Profile</span>
+      <div class="section-line"></div>
+    </div>
+    <div class="profile-box">
+      Principal DevOps and Platform Engineer with <strong>35+ years in IT</strong> — over 20 specialising in cloud infrastructure, distributed systems, and platform engineering. Deep expertise across <strong>AWS, GCP, and hybrid/on-premise</strong> environments, with a proven record delivering production-grade infrastructure for fintech, gaming, IoT/SmartHome, telecoms, and media. Practitioner of <strong>GitOps, IaC-first engineering</strong>, and Unix-philosophy tooling. Recent experience encompasses ML model training environments, LoRA-based LLM fine-tuning, and graph-database-accelerated inference pipelines. Active open-source contributor; principal language: <strong>Ruby</strong>.
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section>
+    <div class="section-header">
+      <span class="section-label">Technical Skills</span>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-row"><span class="skill-cat">Cloud Platforms</span><span class="skill-val">AWS (primary), GCP, Azure</span></div>
+      <div class="skill-row"><span class="skill-cat">Containers &amp; Orch.</span><span class="skill-val">Kubernetes, K3s, Docker, Docker-Compose, Docker-Swarm, Vagrant, Portainer, K9s, Thundernetes</span></div>
+      <div class="skill-row"><span class="skill-cat">IaC</span><span class="skill-val">Terraform, Ansible, Puppet, Chef</span></div>
+      <div class="skill-row"><span class="skill-cat">CI/CD &amp; GitOps</span><span class="skill-val">GitHub Actions, TeamCity, Flux, GitOps patterns</span></div>
+      <div class="skill-row"><span class="skill-cat">Languages</span><span class="skill-val">Ruby · Rails · Sinatra · Python · Perl · Shell · Kotlin · Java · C · Lua</span></div>
+      <div class="skill-row"><span class="skill-cat">Databases</span><span class="skill-val">MySQL, PostgreSQL, Oracle, DynamoDB, AuroraDB, ElasticSearch, Redis, Neo4J, SQLite</span></div>
+      <div class="skill-row"><span class="skill-cat">Messaging</span><span class="skill-val">Kafka, RabbitMQ, MQTT, Mosquitto</span></div>
+      <div class="skill-row"><span class="skill-cat">Observability</span><span class="skill-val">Grafana, DataDog, CloudWatch, Wavefront, Kibana, PagerDuty</span></div>
+      <div class="skill-row"><span class="skill-cat">CDN / Edge</span><span class="skill-val">Fastly Edge</span></div>
+      <div class="skill-row"><span class="skill-cat">ML / AI Infra</span><span class="skill-val">LLM fine-tuning (LoRA), graph-DB-accelerated inference, bespoke Linux distro builds</span></div>
+      <div class="skill-row"><span class="skill-cat">Practices</span><span class="skill-val">SRE, DevOps, Agile/Scrum/Kanban, GitOps, IaC-first engineering</span></div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section>
+    <div class="section-header">
+      <span class="section-label">Professional Experience</span>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Senior DevOps Engineer</span>
+        <span class="job-period">Jun 2025 – Jan 2026</span>
+      </div>
+      <p class="job-company"><strong>Scalpel Ltd</strong> · London</p>
+      <ul>
+        <li>Researched and evaluated AI/ML technologies to accelerate model training and inference performance</li>
+        <li>Designed hybrid ML model training environments on AWS, including a bespoke Linux distribution</li>
+        <li>Built and integrated Terraform IaC management + GitOps pipeline from the ground up</li>
+        <li>Automated AWS infrastructure provisioning; provided cloud domain expertise organisation-wide</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Senior Platform Engineer</span>
+        <span class="job-period">Aug 2024 – Mar 2025</span>
+      </div>
+      <p class="job-company"><strong>Zilch Technology</strong> · London</p>
+      <ul>
+        <li>Maintained and optimised AWS infrastructure for critical financial services</li>
+        <li>Last-line support ensuring financial platform uptime via Kubernetes-managed services</li>
+        <li>Terraform development for AWS infrastructure; Linux development and administration</li>
+        <li>Supported external promotion asset distribution pipeline</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">DevOps / LiveOps Engineer</span>
+        <span class="job-period">Mar 2023 – Apr 2024</span>
+      </div>
+      <p class="job-company"><strong>Supermassive Games</strong> · Guildford</p>
+      <ul>
+        <li>Led transition from traditional AAA game development to cloud-based LiveOps model</li>
+        <li>Designed and implemented CDN mirroring on Fastly Edge, reducing latency and costs</li>
+        <li>Built containerised game-server infrastructure using Kubernetes and Thundernetes</li>
+        <li>Kubernetes configuration management via GitOps/Flux across AWS, GCP, and Azure</li>
+        <li>Automated asset mirroring, package distribution, and build pipelines</li>
+        <li>Built Unreal Engine macOS build tooling; EC2 Linux instance configuration via GitOps</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">SRE Technical Lead · DevOps</span>
+        <span class="job-period">Jul 2015 – May 2022</span>
+      </div>
+      <p class="job-company"><strong>Centrica Hive</strong> · London</p>
+      <ul>
+        <li>Provided technical direction and SME support for Hive IoT platforms in production and staging</li>
+        <li>Developed Ruby-based deployment and orchestration systems for AWS</li>
+        <li>Implemented Kafka messaging architecture and multi-cloud provisioning (AWS + GCP)</li>
+        <li>Built cost-monitoring tools; enhanced platform security posture</li>
+        <li>Created build pipelines using GitHub Actions, TeamCity, and AWS tooling</li>
+        <li>Observability via Wavefront, CloudWatch, Kibana/Elasticsearch (including Lua development)</li>
+        <li>Linux administration and kernel modifications to support Java development teams</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Senior Consultant</span>
+        <span class="job-period">May 2000 – Jun 2015</span>
+      </div>
+      <p class="job-company"><strong>Cartesian</strong> · London</p>
+      <ul>
+        <li>Automated infrastructure provisioning with AWS and custom Ruby/Python tooling</li>
+        <li>Designed modular OO Perl frameworks for billing assurance systems</li>
+        <li>Oracle database administration, migration, and reverse engineering</li>
+        <li>Managed Linux systems for optimised performance across multi-client environments</li>
+      </ul>
+      <div class="clients">
+        <p class="clients-label">Key Client Engagements</p>
+        <div class="client-row"><span class="client-name">The Cloud</span><span class="client-desc">Internal virtualised infrastructure using Chef and Ruby</span></div>
+        <div class="client-row"><span class="client-name">SKY UK/Ireland</span><span class="client-desc">Automated call generation (BluGem/Perl); Oracle DBA</span></div>
+        <div class="client-row"><span class="client-name">Virgin Media / ntl / Telewest</span><span class="client-desc">Telephony switch data extraction via Perl::Expect</span></div>
+        <div class="client-row"><span class="client-name">Base Telecom (Brussels)</span><span class="client-desc">Oracle DB migration and CRM reverse engineering</span></div>
+        <div class="client-row"><span class="client-name">Vodafone Ireland</span><span class="client-desc">In-situ replacement of mediation systems</span></div>
+        <div class="client-row"><span class="client-name">IBM Hursley Park</span><span class="client-desc">SME for mediation system switch for O2</span></div>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Web Developer → Senior Consultant</span>
+        <span class="job-period">1995 – 2000</span>
+      </div>
+      <p class="job-company"><strong>Various</strong></p>
+      <ul>
+        <li>Integrated legacy systems with early web applications for dynamic online delivery</li>
+        <li>Telephony switch provisioning, mediation, billing, and database administration</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ── -->
+  <section>
+    <div class="section-header">
+      <span class="section-label">Education</span>
+      <div class="section-line"></div>
+    </div>
+    <div class="edu-box">
+      <div>
+        <p class="edu-inst">University of California San Diego</p>
+        <p class="edu-degree">BSc Microbiology &amp; Biochemistry (Bioinformatics emphasis) · Minor: Music</p>
+      </div>
+      <span class="edu-year">1984–1990</span>
+    </div>
+  </section>
+
+  <!-- ── INTERESTS ── -->
+  <section>
+    <div class="section-header">
+      <span class="section-label">Interests &amp; Activities</span>
+      <div class="section-line"></div>
+    </div>
+    <div class="interests">
+      <span class="interest-tag">🏉 Rugby · former Southwark Tigers RFC coach</span>
+      <span class="interest-tag">⌨ Open-source software</span>
+      <span class="interest-tag">🏠 SmartHome integration</span>
+      <span class="interest-tag">🍳 Enthusiastic cook</span>
+      <span class="interest-tag">📚 Catch-22 · Snowcrash · Cryptonomicon</span>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <span>morgan.sziraki@gmail.com</span>
+    <span>References available upon request</span>
+    <span>git.morganism.dev</span>
+  </footer>
+
+</div>
+</body>
+</html>
