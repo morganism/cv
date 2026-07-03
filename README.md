@@ -1,6 +1,6 @@
 [![Convert Markdown to PDF and Commit](https://github.com/morganism/cv/actions/workflows/github-actions.yml/badge.svg)](https://github.com/morganism/cv/actions/workflows/github-actions.yml)
 [![Ruby](https://github.com/morganism/cv/actions/workflows/ruby.yml/badge.svg)](https://github.com/morganism/cv/actions/workflows/ruby.yml)
-![PR Count](https://img.shields.io/badge/PRs-3-blue)
+![PR Count](https://img.shields.io/badge/PRs-1-blue)
 [![ruby_template](https://github.com/morganism/cv/actions/workflows/default.yml/badge.svg)](https://github.com/morganism/cv/actions/workflows/default.yml)
 
 # MORGAN SZIRAKI
